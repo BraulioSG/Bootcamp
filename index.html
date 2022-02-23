@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Learning Bootcamp</title>
+    <!-- Favicons -->
+    <link rel="icon" type="image/ico" href="./assets/icons/logo-prime.ico" sizes="16x16">
+    <link rel="apple-touch-icon" href="./assets/icons/logo-prime.ico" >
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/porfolio.css">
+</head>
+<body>
+    <header>
+        <div class="nav-menu">
+            <ul>
+                <a href="#registro"><li>Registro</li></a>
+                <a href="#portafolio"><li>Portafolio</li></a>
+                <a href="#timeline"><li>Ponentes</li></a>
+            </ul>
+        </div>
+        <div class="header-banner">
+            <img src="assets/img/banners/Bootcamp - prime learning.png" alt="">
+        </div>
+    </header> 
+    <section class="about">
+        <p class="quote">"From critical minds to intelligent visions"</p>
+        <div class="info-content">
+            <div class="promo-video">
+                <iframe width="950" height="534" src="https://www.youtube.com/embed/dGHJskd3Gb0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="info-text">
+                <p>
+                    Lugar de encuentro de la innovación educativa para descubrir, imaginar, aprender, compartir y transformar la educación para los retos del futuro
+                </p>
+                <div class="dates">
+                    <h3>Prime Learning Preview 3:00-5:00</h3>
+                        <p>30/Marzo, 27/Abril y 25/Mayo <span>Online</span></p>
+                    <h3>Prime Learning Bootcamp</h3>
+                        <p>8, 9 y 10 Junio <span>Presencial</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portafolio" id="portafolio">
+        <div class="portafolio-banner">
+            <img src="assets/img/banners/Bootcamp teacher porfolio.png" alt="">
+        </div>
+        <div class="portafolio-bases">
+            <p><strong>Objetivo:</strong> Compartir virtual teaching portfolios que se utilizaron en la realización de un proyecto a lo largo del ciclo escolar para publicarlo en la página del Prime Learning Bootcamp, para compartir portafolios docentes de calidad a líderes educativos.</p>
+            <br>
+            <p><strong>Bases del Concurso:</strong></p>
+            <p>Podrán participar de manera voluntaria los docentes de los colegios en el proceso de realización de su portafolio docente.</p>
+            <button onclick="toggle_panel(this)" class="dropdown">Requisitos</button>
+            <div class="panel">
+                <p>1.   Original y creativo</p>
+                <p>2.   Que incluye evidencias del proceso de aprendizaje </p>
+                <p>3.   Que se vea el desarrollo del proyecto (estructura, seguimiento, reflexiones)</p>
+                <p>4.   Objetivos establecidos para el proyecto.</p>
+                <p>5.   Cómo se evaluó el proyecto (Matrices, formatos, Heteroevaluación, etc.) </p>
+            </div>
+            <button onclick="toggle_panel(this)" class="dropdown">Periodo</button>
+            <div class="panel">
+                <p>Las fechas establecidas para mandar el virtual teaching portfolio será del día 15 mayo al 30 de mayo. Mandar tu portafolio al siguiente correo: <a href="mailto: primelearning@colmenares.org.mx" class="link">primelearning@colmenares.org.mx</a> especificando el colegio de procedencia, nombre completo del creador del portafolio, para que año escolar está dirigido y campo de estudio o materia.</p>
+            </div>
+        </div>
+    </section>
+    <!-- modal boxes -->
+    <div class="modal">
+        <class class="modal-content">
+            hola
+        </class>
+    </div>
+    <section class="timeline" id="timeline">
+        <div class="timeline-date">
+            <h3 class="fecha">30 de Marzo, 2022</h3>
+            <div class="events">
+                <div class="event">
+                    <div class="img_container">
+                        <img class="img_event" src="assets/img/ponentes/AW.jpg" alt="">
+                    </div>
+                    <h3 class="info_event">How to become the best educator you can be</h3>
+                    <p class="info_event">Adam Welcome</p>
+                    <div class="trigger"></div>
+                </div>
+            </div>
+        </div> 
+        <div class="expo">
+        </div>
+        <div class="timeline-date">
+            <h3 class="fecha">27 de Abril, 2022</h3>
+            <div class="events">
+                <div class="event">
+                    <div class="img_container">
+                        <img class="img_event" src="assets/img/ponentes/NP.jpg" alt="">
+                    </div>
+                    <h3 class="info_event">Ready, Set Make</h3>
+                    <p class="info_event">Nicholas Provenzano</p>
+                    <div class="trigger"></div>
+                </div>
+                <div class="event">
+                    <div class="img_container">
+                        <img class="img_event" src="assets/img/ponentes/PJDP.jpeg" alt="">
+                    </div>
+                    <h3 class="info_event">Beyond Project Based Learning</h3>
+                    <p class="info_event">Pablo J. Días Tenza</p>
+                    <div class="trigger"></div>
+                </div>
+            </div>
+        </div> 
+        <div class="timeline-date">
+            <h3 class="fecha">25 de Mayo, 2022</h3>
+            <div class="events">
+                <div class="event">
+                    <div class="img_container">
+                        <img class="img_event" src="assets/img/ponentes/JJV.jpeg" alt="">
+                    </div>
+                    <h3 class="info_event">You can only lear what you are excited about</h3>
+                    <p class="info_event">Juan José Vergara</p>
+                    <div class="trigger"></div>
+                </div>
+                <div class="event">
+                    <div class="img_container">
+                        <img class="img_event" src="assets/img/ponentes/YVR.jpg" alt="">
+                    </div>
+                    <h3 class="info_event">Educantion in the metaverse and the change of the future</h3>
+                    <p class="info_event">Yen Gálvez</p>
+                    <div class="trigger"></div>
+                </div>
+            </div>
+        </div> 
+        <div class="timeline-date">
+        </div> 
+    </section>
+    <section class="register" id="registro">
+        <div class="register-info">
+            <h3>¡Aparta tu lugar!</h3>
+            <p class="register-time">
+                tiempo restante<br>
+                <span id="date_txt">00:00:00:00</span>
+            </p>
+        </div>
+        <a href="https://forms.gle/7trYLhMZRJdm9KGH9" target="_blank">
+            <button class="register-btn">
+                Registrate!
+            </button>
+        </a>
+    </section>
+    <footer>
+
+    </footer>
+    <!-- JS SCRIPTS-->
+    <script src="js/themes.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/dropdowns.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>

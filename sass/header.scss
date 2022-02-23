@@ -1,0 +1,71 @@
+@use 'vars';
+
+header{
+    .nav-menu{
+        display: flex;
+        width: 100%;
+        background: vars.$blue;
+        color: vars.$white;
+        ul{
+            @include vars.section-width;
+            display: flex;
+            justify-content: space-evenly;
+
+            a{
+                font-size: 20px;
+                padding: 10px 30px;
+                color: white;
+                position: relative;
+
+                &::after{
+                    content: "";
+                    display: block;
+                    background: vars.$white;
+                    width: 0%;
+                    height: 3px;
+                    position: absolute;
+                    bottom: 5px;
+                    right: 50%;   
+                    transition: all 0.5s ease; 
+                }
+
+                &:hover{
+                    cursor: pointer;
+                }
+
+                &:hover::after{
+                    right: 0%;
+                    margin: auto;
+                    width: 100%;
+                }
+                
+            }
+            select{
+                font-size: 20px;
+                border: none;
+                background: transparent;
+                color: vars.$white;
+                &:hover{
+                    cursor: pointer;
+                }
+                &:focus{
+                    outline: none;
+                }
+                option{
+                    color: black;
+                    cursor: pointer;
+                    &:hover{
+                        background: red;
+                    }
+                }
+            }
+        }
+    }
+    .header-banner{
+        @include vars.section-width;
+        img{
+            margin: 50px auto;
+            width: 100%;
+        }
+    }
+}

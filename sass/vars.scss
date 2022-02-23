@@ -1,0 +1,58 @@
+@use "sass:list";
+
+//Font familes 
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');;
+}
+
+
+$font-text-1: "Poppins";
+$font-text-2: "Montserrat";
+$font-title-1: "Comfortaa";
+
+//pallette
+$red: #d91a2a;
+$pink: #f2ced1;
+$marine: #020659; //not at all
+$blue: #003366;
+$black: #0d0d0d; 
+$white: #eeeeee;
+
+//grays
+$gray1: #ddd;
+$gray2: #bbb;
+
+//Widths
+@mixin section-width(){
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+}
+
+//themes
+@mixin light-theme(){
+    --body-bgcolor: #{$white};
+    --font-color: #{$black};
+    --dates-bgcolor: #{$blue};
+    --dates-font-color: #{$white};
+    --register-bgcolor: #{$blue};
+    --register-font-color: #{$white};
+    --register-btn-bgcolor: #{$white};
+    --register-btn-color: #{$red};
+}
+
+@mixin dark-theme(){
+    --body-bgcolor: #{$black};
+    --font-color: #{$white};
+}

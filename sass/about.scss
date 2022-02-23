@@ -1,0 +1,65 @@
+@use 'vars';
+.about{
+    @include vars.section-width;
+    .quote{
+        font-size: 42px;
+        text-align: center;
+        font-weight: 100;
+        font-style: italic;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #{vars.$marine}
+    }
+    .info-content{
+        margin: 90px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .promo-video{
+            min-width: 400px;
+            aspect-ratio: 16/9;
+            iframe{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .info-text{
+            width: 600px;
+            font-size: 25px;
+            .dates{
+                h3{
+                    $box-size: 25px;
+                    margin: 20px auto;
+                    text-align: left;
+                    background: var(--dates-bgcolor);
+                    display: inline-block;
+                    color: var(--dates-font-color);
+                    width: 100%;
+                    max-width: 500px;
+                    position: relative;
+                    font-size: $box-size;
+                    padding: $box-size / 2;
+
+                    &::before{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 0px;
+                        height: 0px;
+                        border: ($box-size + 4) solid var(--body-bgcolor);
+                        border-left: ($box-size) solid var(--dates-bgcolor);
+                        right: 0;
+                        top: 0;
+                        transform: translate(100%);
+                    }
+                }
+                p{
+                    font-size: 20px;
+                    span{
+                        margin: 20px;
+                        color: vars.$red;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+@use 'vars';
+.portafolio{
+    @include vars.section-width;
+    .portafolio-banner{
+        display: flex;
+        img{
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+    }
+    .portafolio-bases{
+        overflow: hidden;
+        p{
+            font-size: 25px;
+            text-align: justify;
+        }
+        .link{
+            color: blue;
+            text-decoration: underline;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .dropdown{
+            width: 100%;
+            text-align: left;
+            position: relative;
+            font-size: 20px;
+            border: none;
+            padding: 20px 0;
+            margin: 20px auto 0 auto;
+            padding-left: 20px;
+            background: #{vars.$gray1};
+            &:hover{
+                cursor: pointer;
+                background: #{vars.$gray2};
+            }
+            &::after{
+                content: "+";
+                position: absolute;
+                right: 50px;
+                font-weight: bolder;
+            }
+        }
+        .panel{
+            width: 95%;
+            margin: auto;
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+    }
+
+}

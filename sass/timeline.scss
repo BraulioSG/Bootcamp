@@ -1,0 +1,88 @@
+@use 'vars';
+
+.timeline{
+    .timeline-date{
+        @include vars.section-width;
+        .fecha{
+            margin: 20px auto;
+            text-align: center;
+            background: var(--dates-bgcolor);
+            display: inline-block;
+            color: var(--dates-font-color);
+            width: 100%;
+            padding: 15px;
+            font-size: 25px;
+        }
+    }
+    .expo{
+        color: vars.$black;
+    }
+
+    .events{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .event{
+            text-align: center;
+            padding: 0 25px;
+            width: 300px;
+            margin: 20px auto;
+            position: relative;
+            &:hover{
+                cursor: pointer;
+            }
+            .img_container{
+                $size: 200px;
+                margin: 0px auto 20px;
+                width: $size;
+                height: $size;
+                border-radius: 50%;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.5s ease;
+                box-shadow: 0 1px 10px 5px #aaa;
+                &:hover{
+                    transform: scale(1.1);
+                    box-shadow: 0 1px 20px 5px #acc;
+                }
+                img{
+                    height: auto;
+                    width: 150%;
+                }
+            }
+            /*
+            .trigger{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+            }
+            */
+        }
+    }
+}
+
+.modal{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    .modal-content{
+        width: 100%;
+        max-width: 700px;
+        height: 700px;
+        border-radius: 12px;
+        background: vars.$white;
+    }
+}

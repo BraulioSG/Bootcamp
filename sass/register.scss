@@ -1,0 +1,32 @@
+@use 'vars';
+
+.register{
+    background: var(--register-bgcolor);
+    text-align: center;
+    color: var(--register-font-color);
+    padding: 20px;
+    h3{
+        font-size: 30px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .register-btn{
+        border: 2px solid var(--register-btn-color);
+        padding: 10px 20px;
+        margin: 20px auto 0px;
+        color: var(--register-btn-color);
+        font-weight: 600;
+        border-radius: 5px;
+        box-shadow: inset 0 0 0 0 var(--register-btn-color);
+        transition: all 0.5s ease;
+        background: var(--register-btn-bgcolor);
+
+        &:hover{
+            box-shadow: inset 0 -100px 0 0 vars.$red;
+            cursor: pointer;
+            color: var(--register-btn-bgcolor);
+            transform: scale(1.1);
+        }
+    }
+}
