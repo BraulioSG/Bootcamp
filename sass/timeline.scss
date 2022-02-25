@@ -1,6 +1,7 @@
 @use 'vars';
 
 .timeline{
+    margin: 50px;
     .timeline-date{
         @include vars.section-width;
         .fecha{
@@ -73,16 +74,116 @@
     top: 0;
     left: 0;
     background: rgba(0,0,0,0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
 
-    .modal-content{
+    #modal_trigger{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .modal_content{
         width: 100%;
         max-width: 700px;
-        height: 700px;
         border-radius: 12px;
         background: vars.$white;
+        overflow: hidden;
+        display: none;  
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;  
+        position: relative;
+        align-items: space-evenly;
+
+        .modal-btn{
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+
+            button{
+                width: 50%;
+                margin: 20px auto;
+                padding: 20px 0;
+                color: vars.$red;
+                border: none;
+                font-size: 25px;
+                position: relative;
+                border-radius: 50px;
+                min-width: 300px;
+                overflow: hidden;
+
+                &::after{
+                    content: "";
+                    display: block;
+                    background: vars.$red;
+                    width: 0%;
+                    height: 3px;
+                    position: absolute;
+                    bottom: 0;
+                    right: 50%;   
+                    transition: all 0.5s ease; 
+                }
+
+                &:hover::after{
+                    right: 0%;
+                    margin: auto;
+                    width: 100%;
+                }
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+        .modal-title{
+            text-align: center;
+            background: vars.$blue;
+            color: vars.$white;
+            padding: 10px;
+            font-size: 20px;
+            h2{
+                width: 80%;
+                margin: auto;
+            }
+        }
+        .modal-body{
+            margin: 20px auto;
+            width: 90%;
+            font-size: 20px;
+            text-align: justify;
+            max-height: 700px;
+            overflow: auto;
+        }
+        .modal-links{
+            margin: 20px auto;
+            width: 90%;
+            font-size: 20px;
+            .twitter{
+                color: #1DA1F2;
+            }
+            .instagram{
+                color: #C13584;
+            }
+        }
     }
 }
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}   

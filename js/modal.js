@@ -1,15 +1,12 @@
 "use strict";
-let triggers = document.getElementsByClassName("event");
-console.log(triggers);
-for (let i = 0; i < triggers.length; i++) {
-    triggers.onclick = () => {
-        console.log("hello");
-    };
-    console.log(triggers[i].children);
-}
+const triggers = document.getElementsByClassName("event");
+const modal = document.getElementById("modal");
+const contents = document.getElementsByClassName("modal_content");
 window.onclick = (event) => {
     /* Triggers */
     let e = event.target;
+    if (e == modal)
+        closeModal();
     if (e.className == "event") {
         openModal(e);
     }
@@ -21,5 +18,18 @@ window.onclick = (event) => {
     }
 };
 function openModal(trigger) {
-    console.log(trigger);
+    let idx = -1;
+    for (let i = 0; i < triggers.length; i++) {
+        if (triggers[i] == trigger) {
+            idx = i;
+        }
+    }
+    modal.style.display = "flex";
+    contents[idx].style.display = "block";
+}
+function closeModal() {
+    modal.style.display = "none";
+    for (let i = 0; i < contents.length; i++) {
+        contents[i].style.display = "none";
+    }
 }

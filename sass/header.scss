@@ -69,3 +69,21 @@ header{
         }
     }
 }
+
+@media all and (min-width: vars.$bp-screen){
+
+}
+
+@media all and (min-width: vars.$bp-tablet){
+
+}
+
+@media screen and (min-width: 30px){
+    .nav-menu{
+        ul{
+            a{
+                color: red;
+            }
+        }
+    }
+}

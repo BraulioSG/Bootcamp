@@ -1,15 +1,12 @@
-let triggers: any = document.getElementsByClassName("event")
-console.log(triggers);
+const triggers: any = document.getElementsByClassName("event")
 
-for(let i = 0; i < triggers.length; i++){
-    triggers.onclick = ():void => {
-        console.log("hello")
-    }
-    console.log(triggers[i].children)
-}
+const modal: any = document.getElementById("modal")
+const contents: any = document.getElementsByClassName("modal_content");
+
 window.onclick = (event: Event): void => {
     /* Triggers */
     let e: any = event.target
+    if(e == modal) closeModal();
     if(e.className == "event"){
         openModal(e)
     }
@@ -22,5 +19,19 @@ window.onclick = (event: Event): void => {
 }
 
 function openModal(trigger: any): void{
-    console.log(trigger)
+    let idx: number = -1;
+    for(let i = 0; i < triggers.length; i++){
+        if(triggers[i] == trigger){
+            idx = i;
+        }
+    }
+    modal.style.display = "flex";
+    contents[idx].style.display = "block";
+}
+
+function closeModal(): void{
+    modal.style.display = "none";
+    for(let i = 0; i < contents.length; i++){
+        contents[i].style.display = "none";       
+    }
 }

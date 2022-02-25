@@ -77,4 +77,10 @@ header .header-banner img {
   width: 100%;
 }
 
+@media screen and (min-width: 30px) {
+  .nav-menu ul a {
+    color: red;
+  }
+}
+
 /*# sourceMappingURL=header.css.map */

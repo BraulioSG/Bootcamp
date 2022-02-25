@@ -56,3 +56,8 @@ $gray2: #bbb;
     --body-bgcolor: #{$black};
     --font-color: #{$white};
 }
+
+//breakpoints
+$bp-screen: 1200px;
+$bp-tablet: 768px;
+$bp-mobil: 320px;

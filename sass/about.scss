@@ -10,10 +10,10 @@
         color: #{vars.$marine}
     }
     .info-content{
-        margin: 90px auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
+        margin: 90px auto;
         .promo-video{
             min-width: 400px;
             aspect-ratio: 16/9;
@@ -26,7 +26,7 @@
             width: 600px;
             font-size: 25px;
             .dates{
-                h3{
+                .dates-title{
                     $box-size: 25px;
                     margin: 20px auto;
                     text-align: left;
@@ -37,8 +37,8 @@
                     max-width: 500px;
                     position: relative;
                     font-size: $box-size;
-                    padding: $box-size / 2;
-
+                    padding: calc($box-size / 2);
+                    /*
                     &::before{
                         content: "";
                         display: block;
@@ -50,9 +50,9 @@
                         right: 0;
                         top: 0;
                         transform: translate(100%);
-                    }
+                    }*/
                 }
-                p{
+                .dates-txt{
                     font-size: 20px;
                     span{
                         margin: 20px;
@@ -62,4 +62,15 @@
             }
         }
     }
+}
+
+@media all and (min-width: vars.$bp-screen){
+
+}
+
+@media all and (min-width: vars.$bp-tablet){
+
+}
+
+@media (min-width: 30px){
 }

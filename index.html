@@ -8,6 +8,8 @@
     <!-- Favicons -->
     <link rel="icon" type="image/ico" href="./assets/icons/logo-prime.ico" sizes="16x16">
     <link rel="apple-touch-icon" href="./assets/icons/logo-prime.ico" >
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/header.css">
@@ -29,6 +31,8 @@
             <img src="assets/img/banners/Bootcamp - prime learning.png" alt="">
         </div>
     </header> 
+
+
     <section class="about">
         <p class="quote">"From critical minds to intelligent visions"</p>
         <div class="info-content">
@@ -40,14 +44,16 @@
                     Lugar de encuentro de la innovación educativa para descubrir, imaginar, aprender, compartir y transformar la educación para los retos del futuro
                 </p>
                 <div class="dates">
-                    <h3>Prime Learning Preview 3:00-5:00</h3>
-                        <p>30/Marzo, 27/Abril y 25/Mayo <span>Online</span></p>
-                    <h3>Prime Learning Bootcamp</h3>
-                        <p>8, 9 y 10 Junio <span>Presencial</span></p>
+                    <h3 class="dates-title">Prime Learning Preview 3:00-5:00</h3>
+                        <p class="dates-txt">30/Marzo, 27/Abril y 25/Mayo <span>Online</span></p>
+                    <h3 class="dates-title">Prime Learning Bootcamp</h3>
+                        <p class="dates-txt">8, 9 y 10 Junio <span>Presencial</span></p>
                 </div>
             </div>
         </div>
     </section>
+
+
     <section class="portafolio" id="portafolio">
         <div class="portafolio-banner">
             <img src="assets/img/banners/Bootcamp teacher porfolio.png" alt="">
@@ -71,12 +77,93 @@
             </div>
         </div>
     </section>
+
+
     <!-- modal boxes -->
-    <div class="modal">
-        <class class="modal-content">
-            hola
-        </class>
+    <div class="modal" id="modal">
+        <!-- Adam Welcome -->
+        <div class="modal_content">
+            <div class="modal-title">
+                <h2>How to become the best educator you can be</h2>
+            </div>
+            <div class="modal-body">
+                <p>Adam fue Director del Año de su región, reconocido en el programa “20 to Watch” de la National School Board Association de Estados Unidos, ha sido blogger invitado de EdWeek, la revista NAESP y varias otras publicaciones. Es consultor para diversas empresas educativas con el fin de innovar sus productos.</p>
+                <p>Ha sido profesor, coordinador y director de innovación de una institución educativa con 35,000 estudiantes y extrañaba tanto la dirección de una escuela que ahora ha regresado nuevamente como director.</p>
+                <p>Ha sido profesor, coordinador y director de innovación de una institución educativa con 35,000 estudiantes y extrañaba tanto la dirección de una escuela que ahora ha regresado nuevamente como director.</p>
+            </div>
+            <div class="modal-links">
+                <a href="https://twitter.com/mradamwelcome" target="_blank" class="twitter"><i class="fa fa-twitter"></i>@mradamwelcome</a>
+            </div>
+            <div class="modal-btn">
+                <button onclick="closeModal()">cerrar</button>
+            </div>
+        </div>
+        <!-- Nicolas Provenzano -->
+        <div class="modal_content">
+            <div class="modal-title">
+                <h2>Ready, Set, Make</h2>
+            </div>
+            <div class="modal-body">
+                <p>Nicholas Provenzano es profesor y director de espacios de creación en la Escuela Universitaria Liggett de Michigan. También es autor, constructor de espacios de creación, conferenciante internacional, defensor de la salud mental de profesores y estudiantes, y consultor. Escribe en su sitio web www.TheNerdyTeacher.com, así como en muchos otros sitios web educativos destacados.</p>
+                <p>Ha aparecido en CNN, Education Week y otros medios de comunicación. Ha sido reconocido como Profesor de Tecnología del Año por MACUL e ISTE. Nicholas es un Innovador Certificado de Google, Héroe de Sphero, Campeón de Micro:bit, Líder Emergente de ASCD, Mentor de Microsoft Minecraft, Educador Certificado de Raspberry Pi, Líder de Educación de Adobe y Educador Innovador de TEDEd. Sus libros más vendidos, Your Starter Guide to Makerspaces, The Maker Mentality, y Beyond the Poster Board se pueden encontrar en Amazon.</p>
+            </div>
+            <div class="modal-links">
+                <a href="https://twitter.com/thenerdyteacher" target="_blank" class="twitter"><i class="fa fa-twitter"></i>@thenerdyteacher</a>
+            </div>
+            <div class="modal-btn">
+                <button onclick="closeModal()">cerrar</button>
+            </div>
+        </div>
+        <!-- Pablo Diaz -->
+        <div class="modal_content">
+            <div class="modal-title">
+                <h2>Beyond Project Based Learning</h2>
+            </div>
+            <div class="modal-body">
+                <p>Pablo J. Díaz Tenza es Maestro de Educación Primaria, Jefe de Estudios de Infantil y Primaria en el Colegio CEU Jesús María, Coordinador del Programa de la Escuela Primaria, profesor asociado en la escuela de Magisterio de la Universidad UCH de Elche, escritor y formador en metodologías activas de aprendizaje.</p>
+                <p>Docente vocacional, utilizando ABP, Aprendizaje Cooperativo y Cultura de Pensamiento en el aula desde hace más de 10 años, ha compaginado la docencia con la gestión de la innovación, la formación de profesores en metodologías activas de aprendizaje y la divulgación educativa a través de medios digitales y la publicación de varios libros en la colección “Hacia una nueva escuela”.</p>
+            </div>
+            <div class="modal-links">
+                <a href="https://twitter.com/mradamwelcome?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="instagram"><i class="fa fa-instagram"></i>@pablodiaztenza</a>
+            </div>
+            <div class="modal-btn">
+                <button onclick="closeModal()">cerrar</button>
+            </div>
+        </div>
+        <!-- Jose Vergara -->
+        <div class="modal_content">
+            <div class="modal-title">
+                <h2>You can only learn what you are excited about</h2>
+            </div>
+            <div class="modal-body">
+                <p>Juan José Vergara es pedagogo especialista en organización y dirección de centros, animación sociocultural y educación de adultos. Experto en innovación educativa, metodologías activas y aprendizaje basado en proyectos. Autor del libro “Aprendo porque quiero. El ABP paso a paso”, ''Narrar el aprendizaje. La fuerza del relato en el ABP” y recientemente “Un aula un proyecto. El ABP y la nueva educación a partir de 2020”. Ha escrito más de un centenar de artículos y colaboraciones, diseñado varios cursos online para entidades públicas y privadas.</p>
+                <p>Es presidente del Laboratorio de Innovación Educativa (LABinE.org) y en su web www.juanjovergara.com aloja buena parte de su producción para que pueda ser descargada y difundida para quien pueda parecerle útil. </p>
+            </div>
+            <div class="modal-links">
+                <a href="https://twitter.com/juanjovergara" target="_blank" class="twitter"><i class="fa fa-twitter"></i>@juanjovergara</a>
+            </div>
+            <div class="modal-btn">
+                <button onclick="closeModal()">cerrar</button>
+            </div>
+        </div>
+        <!-- Yen Galvez -->
+        <div class="modal_content">
+            <div class="modal-title">
+                <h2>Education in the metaverse and the change of the future</h2>
+            </div>
+            <div class="modal-body">
+                <p>Yen Gálvez es experto en Metaversos, CEO de la productora de contenidos virtuales VirtualMente y la escuela en metaversos/videojuegos VR-EVO. Autor de 8 libros, entre ellos el más actual “Qué es el Metaverso”. Ha sido director creativo, además de desarrollo de proyectos tecnológicos y mundos virtuales, para empresas como Nokia, Intel, Toshiba, Coca-Cola, Telepizza y Globomedia, entre muchas otras. Ganador de diversos premios, entre ellos el Unicornio a los Visual Effects del XVI Festival de Cine Fantástico de la Costa del Sol.</p>
+            </div>
+            <div class="modal-links">
+                <a href="https://twitter.com/mradamwelcome?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="twitter"><i class="fa fa-twitter"></i>@mradamwelcome</a>
+            </div>
+            <div class="modal-btn">
+                <button onclick="closeModal()">cerrar</button>
+            </div>
+        </div>
     </div>
+
+
     <section class="timeline" id="timeline">
         <div class="timeline-date">
             <h3 class="fecha">30 de Marzo, 2022</h3>
@@ -87,12 +174,10 @@
                     </div>
                     <h3 class="info_event">How to become the best educator you can be</h3>
                     <p class="info_event">Adam Welcome</p>
-                    <div class="trigger"></div>
                 </div>
             </div>
         </div> 
-        <div class="expo">
-        </div>
+
         <div class="timeline-date">
             <h3 class="fecha">27 de Abril, 2022</h3>
             <div class="events">
@@ -102,18 +187,17 @@
                     </div>
                     <h3 class="info_event">Ready, Set Make</h3>
                     <p class="info_event">Nicholas Provenzano</p>
-                    <div class="trigger"></div>
                 </div>
                 <div class="event">
                     <div class="img_container">
                         <img class="img_event" src="assets/img/ponentes/PJDP.jpeg" alt="">
                     </div>
                     <h3 class="info_event">Beyond Project Based Learning</h3>
-                    <p class="info_event">Pablo J. Días Tenza</p>
-                    <div class="trigger"></div>
+                    <p class="info_event">Pablo J. Díaz Tenza</p>
                 </div>
             </div>
         </div> 
+
         <div class="timeline-date">
             <h3 class="fecha">25 de Mayo, 2022</h3>
             <div class="events">
@@ -123,7 +207,6 @@
                     </div>
                     <h3 class="info_event">You can only lear what you are excited about</h3>
                     <p class="info_event">Juan José Vergara</p>
-                    <div class="trigger"></div>
                 </div>
                 <div class="event">
                     <div class="img_container">
@@ -131,13 +214,14 @@
                     </div>
                     <h3 class="info_event">Educantion in the metaverse and the change of the future</h3>
                     <p class="info_event">Yen Gálvez</p>
-                    <div class="trigger"></div>
                 </div>
             </div>
         </div> 
         <div class="timeline-date">
         </div> 
     </section>
+
+
     <section class="register" id="registro">
         <div class="register-info">
             <h3>¡Aparta tu lugar!</h3>

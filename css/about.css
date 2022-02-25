@@ -24,10 +24,10 @@
   color: #020659;
 }
 .about .info-content {
-  margin: 90px auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin: 90px auto;
 }
 .about .info-content .promo-video {
   min-width: 400px;
@@ -41,7 +41,7 @@
   width: 600px;
   font-size: 25px;
 }
-.about .info-content .info-text .dates h3 {
+.about .info-content .info-text .dates .dates-title {
   margin: 20px auto;
   text-align: left;
   background: var(--dates-bgcolor);
@@ -52,23 +52,24 @@
   position: relative;
   font-size: 25px;
   padding: 12.5px;
+  /*
+  &::before{
+      content: "";
+      display: block;
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      border: ($box-size + 4) solid var(--body-bgcolor);
+      border-left: ($box-size) solid var(--dates-bgcolor);
+      right: 0;
+      top: 0;
+      transform: translate(100%);
+  }*/
 }
-.about .info-content .info-text .dates h3::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  border: 29px solid var(--body-bgcolor);
-  border-left: 25px solid var(--dates-bgcolor);
-  right: 0;
-  top: 0;
-  transform: translate(100%);
-}
-.about .info-content .info-text .dates p {
+.about .info-content .info-text .dates .dates-txt {
   font-size: 20px;
 }
-.about .info-content .info-text .dates p span {
+.about .info-content .info-text .dates .dates-txt span {
   margin: 20px;
   color: #d91a2a;
 }
