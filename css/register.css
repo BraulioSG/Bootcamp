@@ -15,6 +15,7 @@
   text-align: center;
   color: var(--register-font-color);
   padding: 20px;
+  margin: 50px 0;
 }
 .register h3 {
   font-size: 30px;
@@ -25,7 +26,7 @@
 .register .register-btn {
   border: 2px solid var(--register-btn-color);
   padding: 10px 20px;
-  margin: 20px auto 0px;
+  margin: 20px 20px 0px;
   color: var(--register-btn-color);
   font-weight: 600;
   border-radius: 5px;
@@ -38,6 +39,10 @@
   cursor: pointer;
   color: var(--register-btn-bgcolor);
   transform: scale(1.1);
+}
+.register .leyenda {
+  margin: 20px auto 5px;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=register.css.map */

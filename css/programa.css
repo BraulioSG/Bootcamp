@@ -1,0 +1,14 @@
+.programa {
+  margin: 20px 0;
+}
+.programa .programa-container {
+  width: 100%;
+  max-width: 720px;
+  margin: auto;
+}
+.programa .programa-container img {
+  margin: 20px 0;
+  width: 100%;
+}
+
+/*# sourceMappingURL=programa.css.map */
